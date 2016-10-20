@@ -1,0 +1,24 @@
+{
+  "name": "themeable-web-components",
+  "version": "1.0.0",
+  "description": "Themeable Web Components",
+  "scripts": {
+    "component": "concurrently \"npm run theme:cdn\" \"npm run component:demo\" ",
+    "component:demo": "live-server . --host=localhost --port=3002 --open=components/demo --watch=components/demo",
+    "start": "echo \"start\"",
+    "theme:cdn": "live-server themes/cdn/${THEME:-bootstrap}/ --host=localhost --port=3001 --no-browser",
+    "theme:demo": "live-server . --host=localhost --port=3000 --open=themes/demo --watch=themes/demo"
+  },
+  "author": "Marco Lehmann <m99coder@gmail.com> (https://m99.io/)",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "3.1.0",
+    "express": "4.14.0",
+    "express-http-proxy": "0.10.0",
+    "live-server": "1.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  }
+}

@@ -1,0 +1,31 @@
+
+.switchable-plug-list th.state {
+	width: 60px;
+}
+
+.switchable-plug-list .switch {
+	width: 40px;
+	height: 20px;
+}
+
+.switchable-plug-list .slider {
+	background-color: #d9534f;
+}
+
+.switchable-plug-list .slider:before {
+	height: 16px;
+	width: 16px;
+	left: 2px;
+	bottom: 2px;
+	border-radius: 1px;
+}
+
+.switchable-plug-list input:checked + .slider {
+	background-color: #5cb85c;
+}
+
+.switchable-plug-list input:checked + .slider:before {
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	transform: translateX(20px);
+}

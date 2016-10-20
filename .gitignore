@@ -1,0 +1,6 @@
+.idea
+components/variables.less
+node_modules
+npm-debug.log
+themes/cdn/*/bootstrap
+themes/demo/*/bootstrap

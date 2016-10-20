@@ -1,0 +1,42 @@
+
+.traffic-light {
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	height: 94px;
+	background-color: @btn-default-bg;
+	border-radius: 34px;
+}
+
+.traffic-light .traffic-light-state {
+	position: absolute;
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	background-color: @body-bg;
+	border-radius: 34px;
+}
+
+.traffic-light .traffic-light-state-red {
+	bottom: 64px;
+}
+
+.traffic-light .traffic-light-state-red.traffic-light-state-active {
+	background-color: @btn-danger-bg;
+}
+
+.traffic-light .traffic-light-state-yellow {
+	bottom: 34px;
+}
+
+.traffic-light .traffic-light-state-yellow.traffic-light-state-active {
+	background-color: @btn-warning-bg;
+}
+
+.traffic-light .traffic-light-state-green {
+	bottom: 4px;
+}
+
+.traffic-light .traffic-light-state-green.traffic-light-state-active {
+	background-color: @btn-success-bg;
+}

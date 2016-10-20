@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Bootstrap Demo Page</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../cdn/superhero/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="../../cdn/superhero/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../../cdn/superhero/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../../cdn/superhero/favicons/manifest.json">
+	<link rel="mask-icon" href="../../cdn/superhero/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Bootstrap -->
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h1 class="page-header">Buttons</h1>
+
+				<h2>Button tags</h2>
+				<p>
+					Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.
+				</p>
+				<p>
+					<a href="#" class="btn btn-default" role="button">Link</a>
+					<button class="btn btn-default" type="submit">Button</button>
+					<input class="btn btn-default" type="button" value="Input">
+					<input class="btn btn-default" type="submit" value="Submit">
+				</p>
+				<pre><code>&lt;a href="#" class="btn btn-default" role="button"&gt;Link&lt;/a&gt;
+&lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn btn-default" type="button" value="Input"&gt;
+&lt;input class="btn btn-default" type="submit" value="Submit"&gt;</code></pre>
+
+				<h2>Options</h2>
+				<p>
+					Use any of the available button classes to quickly create a styled button.
+				</p>
+				<p>
+					<button type="button" class="btn btn-default">Default</button>
+					<button type="button" class="btn btn-primary">Primary</button>
+					<button type="button" class="btn btn-success">Success</button>
+					<button type="button" class="btn btn-info">Info</button>
+					<button type="button" class="btn btn-warning">Warning</button>
+					<button type="button" class="btn btn-danger">Danger</button>
+					<button type="button" class="btn btn-link">Link</button>
+				</p>
+				<pre><code>&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-link" type="submit"&gt;Link&lt;/button&gt;</code></pre>
+
+				<h1 class="page-header">Global Add-Ons</h1>
+
+				<h2>Switch</h2>
+				<p>
+					Use switches to visualize states based on checkboxes.
+				</p>
+				<p>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-primary"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-success"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-info"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-warning"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-danger"></span>
+					</label>
+				</p>
+				<pre><code>&lt;label class="switch"&gt;
+	&lt;input type="checkbox"&gt;
+	&lt;div class="slider"&gt;
+&lt;/label&gt;
+&lt;label class="switch"&gt;
+	&lt;input type="checkbox"&gt;
+	&lt;div class="slider slider-primary"&gt;
+&lt;/label&gt;</code></pre>
+				<p>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-rounded"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-rounded slider-primary"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-rounded slider-success"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-rounded slider-info"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-rounded slider-warning"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox" checked>
+						<span class="slider slider-rounded slider-danger"></span>
+					</label>
+				</p>
+				<pre><code>&lt;label class="switch"&gt;
+	&lt;input type="checkbox"&gt;
+	&lt;div class="slider rounded"&gt;
+&lt;/label&gt;
+&lt;label class="switch"&gt;
+	&lt;input type="checkbox"&gt;
+	&lt;div class="slider slider-rounded slider-primary"&gt;
+&lt;/label&gt;</code></pre>
+
+				<h1 class="page-header">Specific Add-Ons</h1>
+
+				<h2>Traffic Lights</h2>
+				<p>
+					Use traffic lights to visualize escalation states.
+				</p>
+				<p>
+					<span class="traffic-light">
+						<span class="traffic-light-state traffic-light-state-red traffic-light-state-active"></span>
+						<span class="traffic-light-state traffic-light-state-yellow"></span>
+						<span class="traffic-light-state traffic-light-state-green"></span>
+					</span>
+					<span class="traffic-light">
+						<span class="traffic-light-state traffic-light-state-red"></span>
+						<span class="traffic-light-state traffic-light-state-yellow traffic-light-state-active"></span>
+						<span class="traffic-light-state traffic-light-state-green"></span>
+					</span>
+					<span class="traffic-light">
+						<span class="traffic-light-state traffic-light-state-red"></span>
+						<span class="traffic-light-state traffic-light-state-yellow"></span>
+						<span class="traffic-light-state traffic-light-state-green traffic-light-state-active"></span>
+					</span>
+				</p>
+				<pre><code>&lt;span class="traffic-light"&gt;
+	&lt;span class="traffic-light-state traffic-light-state-red traffic-light-state-active"&gt;
+	&lt;span class="traffic-light-state traffic-light-state-yellow"&gt;
+	&lt;span class="traffic-light-state traffic-light-state-green"&gt;
+&lt;/span&gt;</code></pre>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
