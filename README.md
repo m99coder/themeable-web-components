@@ -12,12 +12,12 @@ $ npm install
 
 ## Basic principles
 
-1. Themes have to stay compatible to underlying CSS framework.
+### 1. Themes have to stay compatible to underlying CSS framework.
 
 This means the theme developer isn’t allowed to change the internal structure nor to add CSS rules based on tag
 names. There are exactly three extensions points described in section _Patch Bootstrap_.
 
-2. Components are theme-agnostic.
+### 2. Components are theme-agnostic.
 
 This means they are not allowed to use any build-time assets like `.less` files. Otherwise they would potentially
 break the theme CSS rules which should apply to the components markup by inheritance. There are use cases in which
@@ -28,7 +28,7 @@ possible to ignore the underlying theme and define CSS rules in the component co
 are specific enough – by using the components name as CSS prefix for instance – so that other parts of an application
 using the component are not interfered.
 
-3. Apps are theme-agnostic.
+### 3. Apps are theme-agnostic.
 
 This means they are not allowed to use any build-time assets like `.less` files. Otherwise they would potentially
 break the theme CSS rules which should apply to the application markup by inheritance. The application has to be
