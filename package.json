@@ -14,7 +14,7 @@
   "private": true,
   "devDependencies": {
     "concurrently": "3.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-http-proxy": "0.10.0",
     "live-server": "^1.2.1"
   },
